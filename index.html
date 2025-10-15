@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>O-Zone Agri Value Chain Solutions</title>
+    <style>
+        /* General Reset and Typography */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            line-height: 1.7;
+            color: #2d2d2d;
+            background-color: #f8fafc;
+            padding-top: 70px; /* Space for fixed nav */
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
+
+        /* Header Styling */
+        header {
+            background: #ffffff;
+            padding: 1.5rem 2rem;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+            position: relative;
+        }
+
+        .logo-container {
+            flex: 0 0 auto;
+        }
+
+        .logo-container img {
+            max-width: 180px;
+            height: auto;
+            transition: transform 0.3s ease;
+        }
+
+        .logo-container img:hover {
+            transform: scale(1.05);
+        }
+
+        .header-title {
+            flex: 1;
+            text-align: center;
+        }
+
+        .header-title h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #5f0441;
+            letter-spacing: -0.02em;
+        }
+
+        /* Navigation Styling */
+        nav {
+            background: linear-gradient(90deg, #561635, #4b1234);
+            color: #fff;
+            padding: 0.8rem 0;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.1rem;
+            font-weight: 500;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        nav a:hover {
+            background-color: rgba(255, 255, 255, 0.1);
+            color: #e0f7fa;
+        }
+
+        /* Section Styling */
+        section {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 3rem 2rem;
+            background: #ffffff;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s ease;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1a3c34;
+            border-bottom: 3px solid #2a5a50;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #4a4a4a;
+            margin-bottom: 1.2rem;
+        }
+
+        /* Image Block Styling */
+        .image-block-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .image-block {
+            text-align: center;
+        }
+
+        .image-block img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .image-block img:hover {
+            transform: scale(1.03);
+        }
+
+        .image-block p {
+            font-size: 0.9rem;
+            color: #555;
+            margin-top: 0.8rem;
+            font-weight: 400;
+        }
+
+        /* Footer Styling */
+        footer {
+            background: #1a3c34;
+            color: #e0f7fa;
+            text-align: center;
+            padding: 1.5rem;
+            font-size: 0.9rem;
+            margin-top: 2rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding-top: 100px; /* Adjust for taller nav on smaller screens */
+            }
+
+            header {
+                flex-direction: column;
+                gap: 1rem;
+            }
+
+            .logo-container {
+                margin-bottom: 1rem;
+            }
+
+            .header-title h1 {
+                font-size: 1.5rem;
+            }
+
+            nav {
+                flex-direction: column;
+                gap: 0.5rem;
+                padding: 1rem;
+            }
+
+            nav a {
+                font-size: 1rem;
+                padding: 0.5rem;
+            }
+
+            section {
+                padding: 2rem 1.5rem;
+                margin: 1rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo-container img {
+                max-width: 150px;
+            }
+
+            .header-title h1 {
+                font-size: 1.3rem;
+            }
+
+            nav a {
+                font-size: 0.9rem;
+            }
+
+            section {
+                padding: 1.5rem 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo-container">
+            <img src="D:\DiskF\Nilesh personal\Webpage photos\o-zone logo.jpg" alt="TechTrend Logo">
+        </div>
+        <div class="header-title">
+            <h1>O-Zone Agri Value Chain Solutions</h1>
+        </div>
+    </header>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#technology">Technology</a>
+        <a href="#product">Product</a>
+        <a href="#installations">Installations</a>
+        <a href="#recognition">Recognition</a>
+        <a href="#contact">Contact Us</a>
+    </nav>
+    <section id="about">
+        <h2>About</h2>
+        <p>We are a team of interdisciplinary researchers from IIT Bombay closely working on the problems in Onion value chain for last 5+ years. With the strong technical and research skills, we are innovating in the field of affordable and efficient end to end agricultural value chain solutions through waste reduction with the aim to enhance farmers’ incomes.
+
+Comprising interdisciplinary researchers from Centre for Technology Alternatives for Rural Areas (CTARA) at IIT Bombay, our team has rigorously delved into the complexities of the onion value chain for over 5 years. Leveraging advanced technical and research skills, we are actively engaged in pioneering innovations within the realm of agricultural value chains.
+
+Our primary focus lies in developing cutting-edge, end-to-end solutions designed to enhance efficiency and affordability while minimizing waste. Through meticulous analysis and implementation of technical strategies, we aim to significantly augment the income prospects for farmers.
+Join us as we navigate the intricate intersections of technology and agriculture, pushing the boundaries of what's possible for a sustainable and optimized agricultural future!
+</p>
+<p>Detailed analysis of the Onion value chain in India started in 2018 as a part of field research at CTARA. Later a small prototype of 3 MT was developed and tested for evaluating the technical feasibility of the intervention. Upon receiving the promising results in 2019, more sophisticated and optimised new designs were carried out for better performance and techno-economic feasibility. (2019-2022).
+Three such modular storage structures are now operational and real time data is receiving over the server for the purpose of experimentation, research, control and commercial aspects.
+
+In 2021, for PoCRA (Project on Climate Resilient Agriculture - Govt of Maharashtra and World Bank supported initiative), we prepared a Detailed Project report for implementing 300 MT CAOSS Facility with selected FPCs. In 2022, 2 such modular retrofitted storage structures were created at farmgate with fund support from BAIF and RuTAG (IIT Bombay) respectively. In same year, design and installation of Automated CAOSS of 100 MT capacity started at Vasantrao Naik Marathwada Krishi Vidyapeeth started. It will be operational by the ne dof 2o23.
+
+</p>
+        <div class="image-block-container">
+            <div class="image-block">
+                <img src="D:\Onion Storage Development\O-Zone\Website content\New website\AA.jpg" alt="Our Mission">
+                
+            </div>
+            <div class="image-block">
+                <img src="D:\Onion Storage Development\O-Zone\Website content\New website\Team.jpg" alt="Our Team">
+                <p>A diverse team of experts committed to excellence.</p>
+            </div>     
+        </div>
+    </section>
+    <section id="technology">
+        <h2>Technology</h2>
+        <p>At TechTrend Innovations, we leverage cutting-edge technologies to drive progress. Our focus on AI, machine learning, and sustainable solutions ensures we stay ahead in the ever-evolving tech landscape.</p>
+        <div class="image-block-container">
+            <div class="image-block">
+                <img src="D:\Onion Storage Development\O-Zone\Website content\New website\Whatweoffer.jpg" alt="AI Technology">
+                <p>Our AI solutions enhance decision-making with real-time data analysis.</p>
+            </div>
+        </div>
+    </section>
+    <section id="product">
+        <h2>Product</h2>
+        <p>Our flagship product is designed to simplify complex tasks, offering seamless integration and unmatched performance. Built with user experience in mind, it empowers businesses and individuals alike.</p>
+        <div class="image-block-container">
+            <div class="image-block">
+                <img src="D:\Onion Storage Development\O-Zone\Website content\New website\Product.jpg" alt="Product Interface">
+                <p>User-friendly interface for effortless navigation and control.</p>
+            </div>
+        </div>
+    </section>
+    <section id="installations">
+        <h2>Installations</h2>
+        <p>Our innovative storage solutions have been successfully implemented across various regions, empowering farmers with efficient and sustainable systems. We specialize in modular and automated storage facilities tailored to the needs of agricultural communities.</p>
+        <div class="image-block-container">
+            <div class="image-block">
+                <img src="D:\Onion Storage Development\O-Zone\Website content\New website\all storages.jpg" alt="Storage Facility">
+                <p>Modular storage units deployed at farmgate locations.</p>
+            </div>
+            <div class="image-block">
+                <img src="D:\Onion Storage Development\O-Zone\New Projects\SelcoFoundation\Picturesandvideos\Map_Locations.jpg" alt="Automated System">
+                <p>Location of installation on Map.</p>
+            </div>
+        </div>
+    </section>
+    <section id="recognition">
+        <h2>Recognition</h2>
+        <p>Our contributions to agricultural innovation have been recognized by leading institutions and organizations. We are proud to have received accolades for our work in enhancing the onion value chain and supporting sustainable farming practices.</p>
+        <div class="image-block-container">
+            <div class="image-block">
+                <img src="D:\Onion Storage Development\O-Zone\Website content\New website\ogcaward.jpg" alt="Award Ceremony">
+                <p>Team won the Onion Grand Challenge in December 2023 among 600 participants.</p>
+            </div>
+            
+        </div>
+    </section>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p>We are working on building a PR team! till then contact us directly at..</p>
+         <p>Email: vadgave.nilesh56@gmail.com.</p>
+         <p>WhatsApp: +91 9146400664</p>
+         <p>LinkedIn: https://www.linkedin.com/in/nilesh-vadgave-100146196/</p>
+            
+        </div>
+        
+    </section>
+    <footer>
+        <p>&copy; 2025 TechTrend Innovations. All rights reserved.</p>
+    </footer>
+</body>
+</html>
